@@ -2464,7 +2464,7 @@ achievement(
 
               GameMode() == GameMode_1PGame &&
               CompanionShipOnScreen() &&
-              trigger_when(ScoreUpdate() - prev(ScoreUpdate()) >= 0x7000) &&
+              ScoreUpdate() - prev(ScoreUpdate()) >= 0x7000 &&
               // Sprite change from ? to 1up
               (
                    UpdateRoutinePtr(SpriteEntry00) == Shotty_UpdateRoutinePtr && prev(SpriteCode(SpriteEntry00)) == Shotty_Skin_QuestionMark && SpriteCode(SpriteEntry00) == Shotty_Skin_1UP ||
@@ -2493,7 +2493,7 @@ achievement(
               GameSettingsCheck() &&
 
               GameMode() == GameMode_1PGame &&
-              trigger_when(byte(0x000189) > prev(byte(0x000189))) &&
+              byte(0x000189) > prev(byte(0x000189)) &&
               // Sprite change from ? to 1up
               (
                    UpdateRoutinePtr(SpriteEntry00) == Shotty_UpdateRoutinePtr && prev(SpriteCode(SpriteEntry00)) == Shotty_Skin_QuestionMark && SpriteCode(SpriteEntry00) == Shotty_Skin_1UP ||
