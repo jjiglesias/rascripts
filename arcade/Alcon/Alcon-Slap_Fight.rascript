@@ -2610,11 +2610,12 @@ leaderboard(
 
 leaderboard(
     id = 87411, title = "Excellent Players - First Life",
-    description = "Highest score on very first life. Zero points cheat not allowed.",
+    description = "Highest score on very first life.",
     start  =    GameSettingsCheck() &&
                 GameMode() == GameMode_1PGame &&
                 prev(ShipDestructionCounter()) == ShipDestruction_PenUltFrame &&
                 ShipDestructionCounter() == ShipDestruction_LastFrame &&
+                // No submit if zero points
                 Player1ScoreTensChar() != BlankScreenChar,
     cancel =    // We prevent LB to start one whe lose the first life,
                 // which will be the second decrease of the variable
@@ -2628,12 +2629,13 @@ leaderboard(
 
 leaderboard(
     id = 87417, title = "Excellent Players - First Life, Shot Only",
-    description = "Highest score on very first life never using a weapon but Shot, nor Shield. Zero points cheat not allowed.",
+    description = "Highest score on very first life never using a weapon but Shot, nor Shield.",
     start  =    GameSettingsCheck() &&
                 GameMode() == GameMode_1PGame &&
                 prev(ShipDestructionCounter()) == ShipDestruction_PenUltFrame &&
                 ShipDestructionCounter() == ShipDestruction_LastFrame &&
                 CurrentWeapon() == CurrentWeapon_Shot &&
+                // No submit if zero points
                 Player1ScoreTensChar() != BlankScreenChar,
     cancel = always_true() &&
              (  // We prevent LB to start one whe lose the first life,
@@ -2653,12 +2655,14 @@ leaderboard(
 
 leaderboard(
     id = 87415, title = "Excellent Players - First Life, Bomb Only",
-    description = "Highest score on very first life with Bomb. Get Bomb before Area 12 and never change that weapon nor use Shield. Zero points cheat not allowed.",
+    description = "Highest score on very first life with Bomb. Get Bomb before Area 12 and never change that weapon nor use Shield.",
     start  =    GameSettingsCheck() &&
                 GameMode() == GameMode_1PGame &&
                 prev(ShipDestructionCounter()) == ShipDestruction_PenUltFrame &&
                 ShipDestructionCounter() == ShipDestruction_LastFrame &&
-                CurrentWeapon() == CurrentWeapon_Bomb,
+                CurrentWeapon() == CurrentWeapon_Bomb &&
+                // No submit if zero points
+                Player1ScoreTensChar() != BlankScreenChar,
     cancel = always_true() &&
              (  // We prevent LB to start one whe lose the first life,
                 // which will be the second decrease of the variable
@@ -2679,12 +2683,14 @@ leaderboard(
 
 leaderboard(
     id = 87414, title = "Excellent Players - First Life, Laser Only",
-    description = "Highest score on very first life with Laser. Get Laser before Area 12 and never change that weapon nor use Shield. Zero points cheat not allowed.",
+    description = "Highest score on very first life with Laser. Get Laser before Area 12 and never change that weapon nor use Shield.",
     start  =    GameSettingsCheck() &&
                 GameMode() == GameMode_1PGame &&
                 prev(ShipDestructionCounter()) == ShipDestruction_PenUltFrame &&
                 ShipDestructionCounter() == ShipDestruction_LastFrame &&
-                CurrentWeapon() == CurrentWeapon_Laser,
+                CurrentWeapon() == CurrentWeapon_Laser &&
+                // No submit if zero points
+                Player1ScoreTensChar() != BlankScreenChar,
     cancel = always_true() &&
              (  // We prevent LB to start one whe lose the first life,
                 // which will be the second decrease of the variable
@@ -2705,12 +2711,14 @@ leaderboard(
 
 leaderboard(
     id = 87413, title = "Excellent Players - First Life, H.Mis. Only",
-    description = "Highest score on very first life with H.Mis. Get H.Mis. before Area 12 and never change that weapon nor use Shield. Zero points cheat not allowed.",
+    description = "Highest score on very first life with H.Mis. Get H.Mis. before Area 12 and never change that weapon nor use Shield.",
     start  =    GameSettingsCheck() &&
                 GameMode() == GameMode_1PGame &&
                 prev(ShipDestructionCounter()) == ShipDestruction_PenUltFrame &&
                 ShipDestructionCounter() == ShipDestruction_LastFrame &&
-                CurrentWeapon() == CurrentWeapon_HM,
+                CurrentWeapon() == CurrentWeapon_HM &&
+                // No submit if zero points
+                Player1ScoreTensChar() != BlankScreenChar,
     cancel = always_true() &&
              (  // We prevent LB to start one whe lose the first life,
                 // which will be the second decrease of the variable
