@@ -586,7 +586,7 @@ achievement(
               // Game session cancel (disabled): If not full speed once in Area 6
               disable_when(
                   MapSection() >= 3 &&
-                  byte(0x0001DB) != 5
+                  ShipSpeed() != ShipSpeed_Max
               ) &&
 
               // Start event (checkpoint): Boss 1 appears
@@ -2120,7 +2120,7 @@ achievement(
               GameSettingsCheck() &&
               
               GameMode() == GameMode_1PGame &&                                     // 1P Game mode
-              byte(0x00018B) >= 6 &&                                               // Section 6, Area 12 upwards
+              MapSection() >= 6 &&                                               // Section 6, Area 12 upwards
               prev(ShipDestructionCounter()) == ShipDestruction_AntePenUltFrame && // Little scroll time after the destruction of the ship
               ShipDestructionCounter() == ShipDestruction_PenUltFrame &&
               Player1ScoreTensChar() == BlankScreenChar                                       // No tens of points: 0 points
@@ -2462,6 +2462,10 @@ achievement(
     trigger = // Game Settings Checks 
               GameSettingsCheck() &&
 
+              // TODO: Add trigger_when, but it isn't easy
+              //  The best moment is when the question mark sprite is shown, 
+              //  but the sprite entry isn't involved: It's just a matter of calling a routine.
+              //  Is the slot control data that is modified, but entry i isn't always controlled by slot control data i.
               GameMode() == GameMode_1PGame &&
               CompanionShipOnScreen() &&
               ScoreUpdate() - prev(ScoreUpdate()) >= 0x7000 &&
@@ -2492,8 +2496,9 @@ achievement(
     trigger = // Game Settings Checks 
               GameSettingsCheck() &&
 
+              // TODO: Add trigger_when, but it isn't easy
               GameMode() == GameMode_1PGame &&
-              byte(0x000189) > prev(byte(0x000189)) &&
+              LivesRemaining() > prev(LivesRemaining()) &&
               // Sprite change from ? to 1up
               (
                    UpdateRoutinePtr(SpriteEntry00) == Shotty_UpdateRoutinePtr && prev(SpriteCode(SpriteEntry00)) == Shotty_Skin_QuestionMark && SpriteCode(SpriteEntry00) == Shotty_Skin_1UP ||
@@ -2641,7 +2646,7 @@ leaderboard(
                 // We reset previous hits at game start
                 ResetHitsOnGameStart_Alt()
              ),
-    submit = byte(0x0001C5) == 225 && byte(0x000189) != 0,
+    submit = always_true(),
     value = Score(),
     format = "SCORE"
 )
