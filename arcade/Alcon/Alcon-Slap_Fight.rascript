@@ -1554,13 +1554,14 @@ achievement(
                 ) &&
 
                 // Cancel: If the ship is destroyed
-                // NOTE: If you get killed in Section 0x24, something very possible,
-                //  you'll eventually restart in Section 0x22.
+                // NOTE: If you get killed in Section 0x24 (when both twin rovers gather), something very likely,
+                //  you'll restart in Section 0x22 (if there are remaining lives).
                 //  Besides, section offset (0x00b0) is used whent starting or restarting
                 //  a game to time the horizontal courtain removal effect from 0 to 0x200
                 //  and the checkpoint 0x22:0x068 will be hit. This is the checkpoint of
-                //  achievements a leaderboards related to SlapNet's Entrance.
-                //  byte(0x0001A8) follows this sequence: 0x08 -> Ship destroyed, explosion begins -> 0x88 -> Courtain on -> 0x00 -> Timing to 0x200 -> 0x40 -> Courtain off -> 0x08
+                //  achievements and leaderboards related to SlapNet's Entrance.
+                //  byte(0x0001A8), GameInAction(), follows this sequence:
+                //    0x08 -> Ship destroyed, explosion begins -> 0x88 -> Courtain on -> 0x00 -> Timing to 0x200 -> 0x40 -> Courtain off -> 0x08
                 never(
                    prev(ShipDestructionCounter()) == ShipDestruction_PenUltFrame &&
                    ShipDestructionCounter() == ShipDestruction_LastFrame
