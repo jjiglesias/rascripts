@@ -181,7 +181,7 @@ Deflector_ExplosionCounter_LastFrame = 0x10
 Deflector_ExplosionCounter_PenUltFrame = 0x0F
 
 // Other Functions
-function ResetHitsOnGameStart() => (always_false() || never(prev(byte(0x000181)) != 0x10 && GameMode() == GameMode_1PGame))
+function ResetHitsOnGameStart_uniqueAlt() => (always_false() || never(prev(byte(0x000181)) != 0x10 && GameMode() == GameMode_1PGame))
 function ResetHitsOnGameStart_Alt() => (always_false() && never(prev(byte(0x000181)) != 0x10 && byte(0x000181) == 0x10))
 
 // *******************************************************************************************
@@ -251,7 +251,7 @@ achievement(
               byte(SpriteEntry00 + 0x07) == Enemy_A_Destruction_LastFrame &&
 
               // Alt groups: Reset hits when game starts
-              ResetHitsOnGameStart()
+              ResetHitsOnGameStart_uniqueAlt()
 )
 
 achievement(
@@ -293,7 +293,7 @@ achievement(
               byte(SpriteEntry00 + 0x07) == Enemy_A_Destruction_LastFrame &&
               
               // Alt groups: Reset hits when game starts
-              ResetHitsOnGameStart()
+              ResetHitsOnGameStart_uniqueAlt()
 )
 
 achievement(
@@ -338,7 +338,7 @@ achievement(
               trigger_when(byte(SpriteEntry00 + 0x07) == Enemy_A_Destruction_LastFrame) &&
               
               // Alt groups: Reset hits when game starts
-              ResetHitsOnGameStart()
+              ResetHitsOnGameStart_uniqueAlt()
 )
 
 achievement(
@@ -385,7 +385,7 @@ achievement(
               trigger_when(byte(SpriteEntry00 + 0x07) == Enemy_A_Destruction_LastFrame) &&
 
               // Alt groups: Reset hits when game starts
-              ResetHitsOnGameStart()
+              ResetHitsOnGameStart_uniqueAlt()
 )
 
 achievement(
@@ -432,7 +432,7 @@ achievement(
               trigger_when(byte(SpriteEntry00 + 0x07) == Enemy_A_Destruction_LastFrame) &&
 
               // Alt groups: Reset hits when game starts
-              ResetHitsOnGameStart()
+              ResetHitsOnGameStart_uniqueAlt()
 )
 
 achievement(
@@ -479,7 +479,7 @@ achievement(
               trigger_when(byte(SpriteEntry00 + 0x07) == Enemy_A_Destruction_LastFrame) &&
 
               // Alt groups: Reset hits when game starts   
-              ResetHitsOnGameStart()
+              ResetHitsOnGameStart_uniqueAlt()
 )
 
 achievement(
@@ -523,7 +523,7 @@ achievement(
               trigger_when(byte(SpriteEntry00 + 0x07) == Enemy_A_Destruction_LastFrame) &&
 
               // Alt groups: Reset hits when game starts
-              ResetHitsOnGameStart()
+              ResetHitsOnGameStart_uniqueAlt()
 )
 
 achievement(
@@ -567,7 +567,7 @@ achievement(
               trigger_when(byte(SpriteEntry00 + 0x07) == Enemy_A_Destruction_LastFrame) &&
 
               // Alt groups: Reset hits when game starts
-              ResetHitsOnGameStart()
+              ResetHitsOnGameStart_uniqueAlt()
 )
 
 achievement(
@@ -610,7 +610,7 @@ achievement(
               trigger_when(byte(SpriteEntry00 + 0x07) == Enemy_A_Destruction_LastFrame) &&
 
               // Alt groups: Reset hits when game starts
-              ResetHitsOnGameStart()
+              ResetHitsOnGameStart_uniqueAlt()
 )
 
 
@@ -655,7 +655,7 @@ achievement(
               byte(SpriteEntry00 + 0x07) == Enemy_A_Destruction_LastFrame &&
 
               // Alt groups: Reset hits when game starts
-              ResetHitsOnGameStart()
+              ResetHitsOnGameStart_uniqueAlt()
 )
 
 achievement(
@@ -697,7 +697,7 @@ achievement(
               byte(SpriteEntry00 + 0x07) == Enemy_A_Destruction_LastFrame &&
               
               // Alt groups: Reset hits when game starts
-              ResetHitsOnGameStart()
+              ResetHitsOnGameStart_uniqueAlt()
 )
 
 achievement(
@@ -742,7 +742,7 @@ achievement(
               trigger_when(byte(SpriteEntry00 + 0x07) == Enemy_A_Destruction_LastFrame) &&
 
               // Alt groups: Reset hits when game starts
-              ResetHitsOnGameStart()
+              ResetHitsOnGameStart_uniqueAlt()
 )
 
 achievement(
@@ -789,7 +789,7 @@ achievement(
               trigger_when(byte(SpriteEntry00 + 0x07) == Enemy_A_Destruction_LastFrame) &&
 
               // Alt groups: Reset hits when game starts
-              ResetHitsOnGameStart()
+              ResetHitsOnGameStart_uniqueAlt()
 )
 
 achievement(
@@ -836,7 +836,7 @@ achievement(
               trigger_when(byte(SpriteEntry00 + 0x07) == Enemy_A_Destruction_LastFrame) &&
 
               // Alt groups: Reset hits when game starts
-              ResetHitsOnGameStart()
+              ResetHitsOnGameStart_uniqueAlt()
 )
 
 achievement(
@@ -883,7 +883,7 @@ achievement(
               trigger_when(byte(SpriteEntry00 + 0x07) == Enemy_A_Destruction_LastFrame) &&
 
               // Alt groups: Reset hits when game starts
-              ResetHitsOnGameStart()
+              ResetHitsOnGameStart_uniqueAlt()
 )
 
 achievement(
@@ -927,7 +927,7 @@ achievement(
               trigger_when(byte(SpriteEntry00 + 0x07) == Enemy_A_Destruction_LastFrame) &&
 
               // Alt groups: Reset hits when game starts
-              ResetHitsOnGameStart()
+              ResetHitsOnGameStart_uniqueAlt()
 )
 
 achievement(
@@ -971,7 +971,7 @@ achievement(
               trigger_when(byte(SpriteEntry00 + 0x07) == Enemy_A_Destruction_LastFrame) &&
 
               // Alt groups: Reset hits when game starts
-              ResetHitsOnGameStart()
+              ResetHitsOnGameStart_uniqueAlt()
 )
 achievement(
     title = "Challenge: Dessert Battle Tri-Rover Won't Charge", points = 10,
@@ -1011,7 +1011,7 @@ achievement(
               trigger_when(byte(SpriteEntry00 + 0x07) == Enemy_A_Destruction_LastFrame) &&
               
               // Alt groups: Reset hits when game starts
-              ResetHitsOnGameStart()
+              ResetHitsOnGameStart_uniqueAlt()
 )
 
 
@@ -1073,7 +1073,7 @@ achievement(
               ), when=(CurrentWeapon() == CurrentWeapon_Laser)) &&
 
               // Alt groups: Reset hits when game starts
-              ResetHitsOnGameStart()
+              ResetHitsOnGameStart_uniqueAlt()
 )
 
 
@@ -1112,7 +1112,7 @@ achievement(
                 MapSectionOffset() == 0xEA &&
               
                 // Alt groups: Reset hits when game starts
-                ResetHitsOnGameStart()
+                ResetHitsOnGameStart_uniqueAlt()
 )
 
 achievement(
@@ -1149,7 +1149,7 @@ achievement(
                 MapSectionOffset() == 0xEA &&
               
                 // Alt groups: Reset hits when game starts
-                ResetHitsOnGameStart()
+                ResetHitsOnGameStart_uniqueAlt()
 )
 
 achievement(
@@ -1210,7 +1210,7 @@ achievement(
                 trigger_when(MapSectionOffset() == 0xEA) &&
              
                 // Alt groups: Reset hits when game starts
-                ResetHitsOnGameStart()
+                ResetHitsOnGameStart_uniqueAlt()
 )
 
 achievement(
@@ -1270,7 +1270,7 @@ achievement(
                 trigger_when(MapSectionOffset() == 0xEA) &&
 
                 // Alt groups: Reset hits when game starts
-                ResetHitsOnGameStart()
+                ResetHitsOnGameStart_uniqueAlt()
 )
 
 achievement(
@@ -1330,7 +1330,7 @@ achievement(
                 trigger_when(MapSectionOffset() == 0xEA) &&
 
                 // Alt groups: Reset hits when game starts
-                ResetHitsOnGameStart()
+                ResetHitsOnGameStart_uniqueAlt()
 )
 
 achievement(
@@ -1390,7 +1390,7 @@ achievement(
                 trigger_when(MapSectionOffset() == 0xEA) &&
 
                 // Alt groups: Reset hits when game starts
-                ResetHitsOnGameStart()
+                ResetHitsOnGameStart_uniqueAlt()
 )
 
 achievement(
@@ -1428,7 +1428,7 @@ achievement(
                 trigger_when(MapSectionOffset() == 0xEA) &&
 
                 // Alt groups: Reset hits when game starts
-                ResetHitsOnGameStart()
+                ResetHitsOnGameStart_uniqueAlt()
 )
 
 achievement(
@@ -1466,7 +1466,7 @@ achievement(
                 trigger_when(MapSectionOffset() == 0xEA) &&
 
                 // Alt groups: Reset hits when game starts
-                ResetHitsOnGameStart()
+                ResetHitsOnGameStart_uniqueAlt()
 )
 
 achievement(
@@ -1521,7 +1521,7 @@ achievement(
                 trigger_when(MapSectionOffset() == 0xEA) &&
 
                 // Alt groups: Reset hits when game starts
-                ResetHitsOnGameStart()
+                ResetHitsOnGameStart_uniqueAlt()
 )
 
 
@@ -1593,7 +1593,7 @@ achievement(
                 )) &&
 
                 // Alt groups: Reset hits when game starts
-                ResetHitsOnGameStart()
+                ResetHitsOnGameStart_uniqueAlt()
 )
 
 
@@ -1633,7 +1633,7 @@ achievement(
                 MapSectionOffset() == 0x0E0 && 
               
                 // Alt groups: Reset hits when game start
-                ResetHitsOnGameStart()
+                ResetHitsOnGameStart_uniqueAlt()
 )
 
 achievement(
@@ -1671,7 +1671,7 @@ achievement(
                 MapSectionOffset() == 0x0E0 && 
               
                 // Alt groups: Reset hits when game start
-                ResetHitsOnGameStart()
+                ResetHitsOnGameStart_uniqueAlt()
 )
 
 achievement(
@@ -1711,7 +1711,7 @@ achievement(
                 trigger_when(MapSectionOffset() == 0x0E0) && 
               
                 // Alt groups: Reset hits when game start
-                ResetHitsOnGameStart()
+                ResetHitsOnGameStart_uniqueAlt()
 )
 
 achievement(
@@ -1753,7 +1753,7 @@ achievement(
                 trigger_when(MapSectionOffset() == 0x0E0) && 
               
                 // Alt groups: Reset hits when game start
-                ResetHitsOnGameStart()
+                ResetHitsOnGameStart_uniqueAlt()
 )
 
 achievement(
@@ -1795,7 +1795,7 @@ achievement(
                 trigger_when(MapSectionOffset() == 0x0E0) && 
               
                 // Alt groups: Reset hits when game start
-                ResetHitsOnGameStart()
+                ResetHitsOnGameStart_uniqueAlt()
 )
 
 achievement(
@@ -1837,7 +1837,7 @@ achievement(
                 trigger_when(MapSectionOffset() == 0x0E0) && 
               
                 // Alt groups: Reset hits when game start
-                ResetHitsOnGameStart()
+                ResetHitsOnGameStart_uniqueAlt()
 )
 
 achievement(
@@ -1886,7 +1886,7 @@ achievement(
                 trigger_when(MapSectionOffset() == 0x0E0) && 
               
                 // Alt groups: Reset hits when game start
-                ResetHitsOnGameStart()
+                ResetHitsOnGameStart_uniqueAlt()
 )
 
 achievement(
@@ -1935,7 +1935,7 @@ achievement(
                 trigger_when(MapSectionOffset() == 0x0E0) && 
               
                 // Alt groups: Reset hits when game start
-                ResetHitsOnGameStart()
+                ResetHitsOnGameStart_uniqueAlt()
 )
 
 achievement(
@@ -1984,7 +1984,7 @@ achievement(
                 trigger_when(MapSectionOffset() == 0x0E0) && 
               
                 // Alt groups: Reset hits when game start
-                ResetHitsOnGameStart()
+                ResetHitsOnGameStart_uniqueAlt()
 )
 
 
@@ -2015,7 +2015,7 @@ achievement(
               trigger_when(ThousandPoints() >= 400) &&
 
               // Alt groups: Reset hits when game start
-              ResetHitsOnGameStart()
+              ResetHitsOnGameStart_uniqueAlt()
 )
 
 achievement(
@@ -2051,7 +2051,7 @@ achievement(
               trigger_when(LoopCounterLow4() == 3) &&
 
               // Alt groups: Reset hits when game start
-              ResetHitsOnGameStart()
+              ResetHitsOnGameStart_uniqueAlt()
 )
 
 
@@ -2199,7 +2199,7 @@ achievement(
               )) &&
 
               // Alt: Reset all on game start
-              ResetHitsOnGameStart()
+              ResetHitsOnGameStart_uniqueAlt()
 )
 
 achievement(
@@ -2297,7 +2297,7 @@ achievement(
               )) &&
 
               // Alt: Reset all on game start
-              ResetHitsOnGameStart()
+              ResetHitsOnGameStart_uniqueAlt()
 )
 
 achievement(
@@ -2349,7 +2349,7 @@ achievement(
               )) &&
 
               // Alt: Reset all on game start
-              ResetHitsOnGameStart()
+              ResetHitsOnGameStart_uniqueAlt()
 )
 
 achievement(
@@ -2401,7 +2401,7 @@ achievement(
               )) &&
 
               // Alt: Reset all on game start
-              ResetHitsOnGameStart()
+              ResetHitsOnGameStart_uniqueAlt()
 )
 
 achievement(
@@ -2583,7 +2583,7 @@ leaderboard(
     cancel =    // Cancel game session if ZP cheat
                 once(DeadWithZeroPoints()) &&
                 // Alt group: Eventualy reset ZP cheat hit at 1P game start
-                ResetHitsOnGameStart(),
+                ResetHitsOnGameStart_uniqueAlt(),
     submit =    always_true(),
     value =     Score(),
     format =    "SCORE"
@@ -2622,7 +2622,7 @@ leaderboard(
                 // which will be the second decrease of the variable
                 repeated(2, prev(LivesRemaining()) > LivesRemaining()) &&
                 // Alt group: Reset previous hits at game start
-                ResetHitsOnGameStart(),
+                ResetHitsOnGameStart_uniqueAlt(),
     submit =    always_true(),
     value =     Score(),
     format =    "SCORE"
@@ -2780,7 +2780,7 @@ leaderboard(
     cancel =    // Cancel game session if ZP cheat
                 once((DeadWithZeroPoints())) &&
                 // Alt group: Eventualy reset ZP cheat hit at 1P game start
-                ResetHitsOnGameStart(),
+                ResetHitsOnGameStart_uniqueAlt(),
     submit =    always_true(),
     value  =    EnhancedArea(),
     format =    "VALUE"
@@ -2797,7 +2797,7 @@ leaderboard(
                 // which will be the second decrease of the variable
                 repeated(2, prev(LivesRemaining()) > LivesRemaining()) &&
                 // Alt group: reset previous hits at 1P game start
-                ResetHitsOnGameStart(),
+                ResetHitsOnGameStart_uniqueAlt(),
     submit =    always_true(),
     value =     EnhancedArea(),
     format =    "VALUE"
@@ -2816,7 +2816,7 @@ leaderboard(
                 // which will be the second decrease of the variable
                 repeated(2, prev(LivesRemaining()) > LivesRemaining()) &&
                 // Alt group: reset previous hits at 1P game start
-                ResetHitsOnGameStart(),
+                ResetHitsOnGameStart_uniqueAlt(),
     submit =    always_true(),
     value =     EnhancedArea(),
     format =    "VALUE"
