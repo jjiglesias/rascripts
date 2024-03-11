@@ -2452,11 +2452,11 @@ achievement(
 )
 
 // Shot Bonus:
-//           +00  +03  +06  +1c
-//  1st hit:  03 - 80 - 94 - 00  -> Codigo 0x03: ?
-//  2nd hit:
-//  3rd hit:  3c - 86 - 00 - up  -> Codigo 0x3c: 3000 points
-//  Toque:    3d - 80 - 00 - up  -> Codigo 0x3d: 1up
+//              +00  +03  +06  +1c
+//  Activation:  03 - 80 - 94 - 00  -> Codigo 0x03: ?
+//  1st hit:
+//  2nd hit:     3c - 86 - 00 - up  -> Codigo 0x3c: 3000 points
+//  Touch:       3d - 80 - 00 - up  -> Codigo 0x3d: 1up
 achievement(
     title = "Challenge: Beam Me Up, Shotty", points = 25,
     description = "Try and get 70000 points from any one hidden shot bonus.",
@@ -2469,7 +2469,7 @@ achievement(
               //  Is the slot control data that is modified, but entry i isn't always controlled by slot control data i.
               GameMode() == GameMode_1PGame &&
               CompanionShipOnScreen() &&
-              ScoreUpdate() - prev(ScoreUpdate()) >= 0x7000 &&
+              ScoreUpdate() - prev(ScoreUpdate()) == 0x7000 &&
               // Sprite change from ? to 1up
               (
                    UpdateRoutinePtr(SpriteEntry00) == Shotty_UpdateRoutinePtr && prev(SpriteCode(SpriteEntry00)) == Shotty_Skin_QuestionMark && SpriteCode(SpriteEntry00) == Shotty_Skin_1UP ||
@@ -2499,7 +2499,7 @@ achievement(
 
               // TODO: Add trigger_when, but it isn't easy
               GameMode() == GameMode_1PGame &&
-              LivesRemaining() > prev(LivesRemaining()) &&
+              //LivesRemaining() > prev(LivesRemaining()) &&
               // Sprite change from ? to 1up
               (
                    UpdateRoutinePtr(SpriteEntry00) == Shotty_UpdateRoutinePtr && prev(SpriteCode(SpriteEntry00)) == Shotty_Skin_QuestionMark && SpriteCode(SpriteEntry00) == Shotty_Skin_1UP ||
