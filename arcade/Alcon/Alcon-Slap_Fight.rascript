@@ -90,9 +90,9 @@ DipSwitch2 = 0x00500A
 function DS2Difficulty() => bit0(DipSwitch2) + bit1(DipSwitch2)
 function DS2BonusLife()  => bit2(DipSwitch2) + bit3(DipSwitch2)
 function DS2Lives()      => bit4(DipSwitch2) + bit5(DipSwitch2)
-function GameSettingsCheck() => DS2Lives() == 0 &&
-                                DS2Difficulty() == 0 &&
-                                DS2BonusLife() == 0
+// This function is not corretly compiled by RATools 1.12.1
+// That's why there are differences between Generated and Published
+function GameSettingsCheck() => (bitcount(DipSwitch2) - bit6(DipSwitch2) - bit7(DipSwitch2)) == 0
 
 // 0x0059A2: Offset of the tens of 1P points character in character video RAM
 // 0x000167: Contains the reference base point
