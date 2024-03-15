@@ -215,7 +215,7 @@ achievement(
 // * First Boss: Alley Battle Rover                                                          *
 // *******************************************************************************************
 achievement(
-    title = "Beat Alley Battle Rover", points = 2,
+    title = "Duel at Silicon Alley", points = 2,
     description = "The first huge battle rover of SlapNet's machine network is defending Silicon Alley. Destroy it. Zero points cheat not allowed.",
     id = 390919, badge = "441848", published = "20/01/2024 10:02:18", modified = "20/01/2024 10:02:18",
     trigger = // Prevent hits outside 1P Game
@@ -256,7 +256,7 @@ achievement(
 )
 
 achievement(
-    title = "Beat Alley Battle Rover - Second Loop", points = 25,
+    title = "Duel at Silicon Alley - Second Loop", points = 25,
     description = "Beat Alley Battle Rover in the second loop. Zero points cheat not allowed.",
     id = 390920, badge = "441849", published = "20/01/2024 10:02:18", modified = "20/01/2024 10:02:18",
     trigger = // Prevent hits outside 1P Game
@@ -298,7 +298,7 @@ achievement(
 )
 
 achievement(
-    title = "Challenge: Beat Alley Battle Rover - Shot Only", points = 5,
+    title = "Challenge: Duel at Silicon Alley - Shot Only", points = 5,
     description = "Beat Alley Battle Rover without ever changing from Shot to any other weapon, or using Shield, or being killed. Zero points cheat not allowed.",
     id = 390921, badge = "441850", published = "20/01/2024 10:02:18", modified = "20/01/2024 10:02:18",
     trigger = // Prevent hits outside 1P Game
@@ -343,7 +343,7 @@ achievement(
 )
 
 achievement(
-    title = "Challenge: Beat Alley Battle Rover - Bomb Only", points = 5,
+    title = "Challenge: Duel at Silicon Alley - Bomb Only", points = 5,
     description = "Get Bomb before Area 12 and beat Alley Battle Rover. From Area 12 up, don't ever change to a weapon other than Bomb and don't be killed. Never use Shield. Zero points cheat not allowed.",
     id = 390922, badge = "441851", published = "20/01/2024 10:02:18", modified = "20/01/2024 10:02:18",
     trigger = // Prevent hits outside 1P Game
@@ -390,7 +390,7 @@ achievement(
 )
 
 achievement(
-    title = "Challenge: Beat Alley Battle Rover - Laser Only", points = 5,
+    title = "Challenge: Duel at Silicon Alley - Laser Only", points = 5,
     description = "Get Laser before Area 12 and beat Alley Battle Rover. From Area 12 up, don't ever change to a weapon other than Laser and don't be killed. Never use Shield. Zero points cheat not allowed.",
     id = 390923, badge = "441852", published = "20/01/2024 10:02:18", modified = "20/01/2024 10:02:18",
     trigger = // Prevent hits outside 1P Game
@@ -437,7 +437,7 @@ achievement(
 )
 
 achievement(
-    title = "Challenge: Beat Alley Battle Rover - H.Mis. Only", points = 5,
+    title = "Challenge: Duel at Silicon Alley - H.Mis. Only", points = 5,
     description = "Get H.Mis. before Area 12 and beat Alley Battle Rover. From Area 12 up, don't ever change to a weapon other than H.Mis. and don't be killed. Never use Shield. Zero points cheat not allowed.",
     id = 390924, badge = "441853", published = "20/01/2024 10:02:19", modified = "20/01/2024 10:02:19",
     trigger = // Prevent hits outside 1P Game
@@ -484,7 +484,7 @@ achievement(
 )
 
 achievement(
-    title = "Challenge: Beat Alley Battle Rover - 2 Wings", points = 5,
+    title = "Challenge: Duel at Silicon Alley - 2 Wings", points = 5,
     description = "Beat Alley Battle Rover with 2 Wings. The wings must be on before facing Alley Battle Rover. Zero points cheat not allowed.",
     id = 390925, badge = "441854", published = "20/01/2024 10:02:19", modified = "20/01/2024 10:02:19",
     trigger = // Prevent hits outside 1P Game
@@ -528,7 +528,7 @@ achievement(
 )
 
 achievement(
-    title = "Challenge: Beat Alley Battle Rover - 3 Wings", points = 10,
+    title = "Challenge: Duel at Silicon Alley - 3 Wings", points = 10,
     description = "Beat Alley Battle Rover with 3 Wings. The wings must be on before facing Alley Battle Rover. Zero points cheat not allowed.",
     id = 390926, badge = "441855", published = "20/01/2024 10:02:19", modified = "20/01/2024 10:02:19",
     trigger = // Prevent hits outside 1P Game
@@ -572,7 +572,7 @@ achievement(
 )
 
 achievement(
-    title = "Challenge: Beat Alley Battle Rover - Full Speed", points = 5,
+    title = "Challenge: Duel at Silicon Alley - Full Speed", points = 5,
     description = "Get full 5x speed before Area 6 and keep it until beating Alley Battle Rover. Shield and Zero Points cheat not allowed.",
     id = 390927, badge = "441856", published = "20/01/2024 10:02:19", modified = "20/01/2024 10:02:19",
     trigger = // Prevent hits outside 1P Game
@@ -619,7 +619,7 @@ achievement(
 // * Second Boss: Desert Battle Tri-Rover
 // *******************************************************************************************
 achievement(
-    title = "Beat Desert Battle Tri-Rover", points = 5,
+    title = "The Desert Rovox", points = 5,
     description = "A second, huge, three-headed, articulated rover defends the desert. Destroy it. Zero points cheat not allowed.",
     id = 390928, badge = "441857", published = "20/01/2024 10:02:20", modified = "20/01/2024 10:02:20",
     trigger = // Prevent hits outside 1P Game
@@ -660,7 +660,7 @@ achievement(
 )
 
 achievement(
-    title = "Beat Desert Battle Tri-Rover - Second Loop", points = 25,
+    title = "The Desert Rovox - Second Loop", points = 25,
     description = "Beat Desert Battle Tri-Rover in the second loop. Zero points cheat not allowed.",
     id = 390929, badge = "441858", published = "20/01/2024 10:02:20", modified = "20/01/2024 10:02:20",
     trigger = // Prevent hits outside 1P Game
@@ -702,7 +702,7 @@ achievement(
 )
 
 achievement(
-    title = "Challenge: Beat Desert Battle Tri-Rover - Shot Only", points = 10,
+    title = "Challenge: The Desert Rovox - Shot Only", points = 10,
     description = "Beat Desert Battle Tri-Rover without ever changing from Shot to any other weapon, or using Shield, or being killed. Zero points cheat not allowed.",
     id = 390930, badge = "441859", published = "20/01/2024 10:02:20", modified = "20/01/2024 10:02:20",
     trigger = // Prevent hits outside 1P Game
@@ -747,7 +747,7 @@ achievement(
 )
 
 achievement(
-    title = "Challenge: Beat Desert Battle Tri-Rover - Bomb Only", points = 10,
+    title = "Challenge: The Desert Rovox - Bomb Only", points = 10,
     description = "Get Bomb before Area 12 and beat Desert Battle Tri-Rover. From Area 12 up, don't ever change to a weapon other than Bomb and don't be killed. Never use Shield. Zero points cheat not allowed.",
     id = 390931, badge = "441860", published = "20/01/2024 10:02:20", modified = "20/01/2024 10:02:20",
     trigger = // Prevent hits outside 1P Game
@@ -794,7 +794,7 @@ achievement(
 )
 
 achievement(
-    title = "Challenge: Beat Desert Battle Tri-Rover - Laser Only", points = 10,
+    title = "Challenge: The Desert Rovox - Laser Only", points = 10,
     description = "Get Laser before Area 12 and beat Desert Battle Tri-Rover. From Area 12 up, don't ever change to a weapon other than Laser and don't be killed. Never use Shield. Zero points cheat not allowed.",
     id = 390932, badge = "441861", published = "20/01/2024 10:02:20", modified = "20/01/2024 10:02:20",
     trigger = // Prevent hits outside 1P Game
@@ -841,7 +841,7 @@ achievement(
 )
 
 achievement(
-    title = "Challenge: Beat Desert Battle Tri-Rover - H.Mis. Only", points = 10,
+    title = "Challenge: The Desert Rovox - H.Mis. Only", points = 10,
     description = "Get H.Mis. before Area 12 and beat Desert Battle Tri-Rover. From Area 12 up, don't ever change to a weapon other than H.Mis. and don't be killed. Never use Shield. Zero points cheat not allowed.",
     id = 390933, badge = "441862", published = "20/01/2024 10:02:21", modified = "20/01/2024 10:02:21",
     trigger = // Prevent hits outside 1P Game
@@ -888,7 +888,7 @@ achievement(
 )
 
 achievement(
-    title = "Challenge: Beat Desert Battle Tri-Rover - 2 Wings", points = 25,
+    title = "Challenge: The Desert Rovox - 2 Wings", points = 25,
     description = "Beat Desert Battle Tri-Rover with 2 Wings. The wings must be on before facing Dessert Battle Tri-Rover. Zero points cheat not allowed.",
     id = 390934, badge = "441864", published = "20/01/2024 10:02:21", modified = "20/01/2024 10:02:21",
     trigger = // Prevent hits outside 1P Game
@@ -932,7 +932,7 @@ achievement(
 )
 
 achievement(
-    title = "Challenge: Beat Dessert Battle Tri-Rover - 3 Wings", points = 50,
+    title = "Challenge: The Desert Rovox - 3 Wings", points = 50,
     description = "Beat Dessert Battle Tri-Rover with 3 Wings. The wings must be on before facing Dessert Battle Tri-Rover. Zero points cheat not allowed.",
     id = 390946, badge = "441903", published = "20/01/2024 10:03:13", modified = "20/01/2024 10:03:13",
     trigger = // Prevent hits outside 1P Game
@@ -975,7 +975,7 @@ achievement(
               ResetHitsOnGameStart_uniqueAlt()
 )
 achievement(
-    title = "Challenge: Dessert Battle Tri-Rover Won't Charge", points = 10,
+    title = "Challenge: The Desert Rovox Won't Charge", points = 10,
     description = "Challenge: Destroy Dessert Battle Tri-Rover before its final charge attack movement. Zero points cheat not allowed.",
     id = 390945, badge = "441902", published = "20/01/2024 10:03:13", modified = "20/01/2024 10:03:13",
     trigger = // Prevent hits outside 1P Game
@@ -1020,7 +1020,7 @@ achievement(
 // * Tank Wave
 // *******************************************************************************************
 achievement(
-    title = "Challenge: Destroy Desert Tank Wave with Laser", points = 10,
+    title = "Challenge: Laser to the Panzer", points = 10,
     description = "Destroy all tanks of the desert tank wave with Laser, and without being killed once the wave begins. Shield not allowed.",
     id = 390947, badge = "441904", published = "20/01/2024 10:03:13", modified = "20/01/2024 10:03:13",
     trigger = // Prevent tally from counting hits outside 1P Game
@@ -1082,7 +1082,7 @@ achievement(
 // * Third Boss: SlapNet defends the main entrance
 // *******************************************************************************************
 achievement(
-    title = "Get Through SlapNet Entrance", points = 10,
+    title = "Into SlapNet's Nest", points = 10,
     description = "SlapNet is defending the entrance to is Head Motherboard Facilities. Make it back off. Zero points cheat not allowed.",
     id = 390935, badge = "441867", published = "20/01/2024 10:02:21", modified = "20/01/2024 10:02:21",
     trigger =   // Prevent hits outside 1P Game
@@ -1117,7 +1117,7 @@ achievement(
 )
 
 achievement(
-    title = "Get Through SlapNet Entrance - Second Loop", points = 25,
+    title = "Into SlapNet's Nest - Second Loop", points = 25,
     description = "Make SlapNet back off in the second loop. Zero points cheat not allowed.",
     id = 390948, badge = "441905", published = "20/01/2024 10:03:13", modified = "20/01/2024 10:03:13",
     trigger =   // Prevent hits outside 1P Game
@@ -1154,7 +1154,7 @@ achievement(
 )
 
 achievement(
-    title = "Challenge: Get Through SlapNet Entrance - Shot Only", points = 10,
+    title = "Challenge: Into SlapNet's Nest - Shot Only", points = 10,
     description = "Make SlapNet back off without ever changing from Shot to any other weapon, or using Shield, or being killed. Zero points cheat not allowed.",
     id = 390949, badge = "441906", published = "20/01/2024 10:03:14", modified = "20/01/2024 10:03:14",
     trigger =   // Prevent hits outside 1P Game
@@ -1215,7 +1215,7 @@ achievement(
 )
 
 achievement(
-    title = "Challenge: Get Through SlapNet Entrance - Bomb Only", points = 10,
+    title = "Challenge: Into SlapNet's Nest - Bomb Only", points = 10,
     description = "Get Bomb before Area 12 and make SlapNet back off. From Area 12 up, don't ever change to a weapon other than Bomb and don't be killed. Never use Shield. Zero points cheat not allowed.",
     id = 390936, badge = "441870", published = "20/01/2024 10:02:22", modified = "20/01/2024 10:02:22",
     trigger =   // Prevent hits outside 1P Game
@@ -1275,7 +1275,7 @@ achievement(
 )
 
 achievement(
-    title = "Challenge: Get Through SlapNet Entrance - Laser Only", points = 10,
+    title = "Challenge: Into SlapNet's Nest - Laser Only", points = 10,
     description = "Get Laser before Area 12 and make SlapNet back off. From Area 12 up, don't ever change to a weapon other than Laser and don't be killed. Never use Shield. Zero points cheat not allowed.",
     id = 390950, badge = "441907", published = "20/01/2024 10:03:14", modified = "20/01/2024 10:03:14",
     trigger =   // Prevent hits outside 1P Game
@@ -1335,7 +1335,7 @@ achievement(
 )
 
 achievement(
-    title = "Challenge: Get Through SlapNet Entrance - H.Mis. Only", points = 10,
+    title = "Challenge: Into SlapNet's Nest - H.Mis. Only", points = 10,
     description = "Get H.Mis. before Area 12 and make SlapNet back off. From Area 12 up, don't ever change to a weapon other than H.Mis. and don't be killed. Never use Shield. Zero points cheat not allowed.",
     id = 390951, badge = "441908", published = "20/01/2024 10:03:14", modified = "20/01/2024 10:03:14",
     trigger =   // Prevent hits outside 1P Game
@@ -1395,7 +1395,7 @@ achievement(
 )
 
 achievement(
-    title = "Challenge: Get Through SlapNet Entrance - 2 Wings", points = 10,
+    title = "Challenge: Into SlapNet's Nest - 2 Wings", points = 10,
     description = "Make SlapNet back off with 2 Wings. The wings must be on before facing SlapNet. Zero points cheat not allowed.",
     id = 390937, badge = "441874", published = "20/01/2024 10:02:22", modified = "20/01/2024 10:02:22",
     trigger =   // Prevent hits outside 1P Game
@@ -1433,7 +1433,7 @@ achievement(
 )
 
 achievement(
-    title = "Challenge: Get Through SlapNet Entrance - 3 Wings", points = 10,
+    title = "Challenge: Into SlapNet's Nest - 3 Wings", points = 10,
     description = "Make SlapNet back off with 3 Wings. The wings must be on before facing SlapNet. Zero points cheat not allowed.",
     id = 390953, badge = "441910", published = "20/01/2024 10:03:14", modified = "20/01/2024 10:03:14",
     trigger =   // Prevent hits outside 1P Game
@@ -1471,7 +1471,7 @@ achievement(
 )
 
 achievement(
-    title = "Challenge: Get Through SlapNet Entrance by Time", points = 25,
+    title = "Challenge: Into SlapNet's Nest by Time", points = 25,
     description = "Make SlapNet back off without damaging it badly, enduring util it backs off on its own. Zero points cheat not allowed.",
     id = 390952, badge = "441909", published = "20/01/2024 10:03:14", modified = "20/01/2024 10:03:14",
     trigger =   // Prevent hits outside 1P Game
@@ -1530,7 +1530,7 @@ achievement(
 // * Tank Wave
 // *******************************************************************************************
 achievement(
-    title = "Beat 'Twiny' on Rails", points = 5,
+    title = "Twiny on Rails", points = 5,
     description = "The last stumbling block in our way to the Main Socket is 'Twiny' on Rails, the fearsome pair of on-rails battle rovers that defend the supply chains of the Head Motherboard Facilities. Destroy them. Zero points cheat not allowed.",
     id = 390954, badge = "441911", published = "20/01/2024 10:03:15", modified = "20/01/2024 10:03:15",
     trigger =   // Prevent hits outside 1P Game
@@ -1602,7 +1602,7 @@ achievement(
 // * Destroy SlapNet, final Boss
 // *******************************************************************************************
 achievement(
-    title = "Destroy SlapNet", points = 25,
+    title = "Terminate SlapNet", points = 25,
     description = "Finaly you get to the Head Motherboard Facilities Main Socket where you will destroy the ultimate evil artificial general superintelligence: SlapNet. Zero points cheat not allowed.",
     id = 390938, badge = "441877", published = "20/01/2024 10:02:22", modified = "20/01/2024 10:02:22",
     trigger =   // Prevent hits outside 1P Game
@@ -1638,7 +1638,7 @@ achievement(
 )
 
 achievement(
-    title = "Destroy SlapNet Judgement Day", points = 25,
+    title = "Terminate SlapNet Judgement Day", points = 25,
     description = "Destroy SlapNet in its first 'reinrackation' (second loop). Zero points cheat not allowed.",
     id = 390955, badge = "441912", published = "20/01/2024 10:03:15", modified = "20/01/2024 10:03:15",
     trigger =   // Prevent hits outside 1P Game
@@ -1676,7 +1676,7 @@ achievement(
 )
 
 achievement(
-    title = "Challenge: Destroy SlapNet - Shot Only", points = 25,
+    title = "Challenge: Terminate SlapNet - Shot Only", points = 25,
     description = "Destroy SlapNet without ever changing from Shot to any other weapon, or using Shield, or being killed. Zero points cheat not allowed.",
     id = 390956, badge = "441913", published = "20/01/2024 10:03:15", modified = "20/01/2024 10:03:15",
     trigger =   // Prevent hits outside 1P Game
@@ -1716,7 +1716,7 @@ achievement(
 )
 
 achievement(
-    title = "Challenge: Destroy SlapNet - Bomb Only", points = 25,
+    title = "Challenge: Terminate SlapNet - Bomb Only", points = 25,
     description = "Get Bomb before Area 12 and destroy SlapNet. From Area 12 up, don't ever change to a weapon other than Bomb and don't be killed. Never use Shield. Zero points cheat not allowed.",
     id = 390962, badge = "441930", published = "20/01/2024 10:03:38", modified = "20/01/2024 10:03:38",
     trigger =   // Prevent hits outside 1P Game
@@ -1758,7 +1758,7 @@ achievement(
 )
 
 achievement(
-    title = "Challenge: Destroy SlapNet - Laser Only", points = 25,
+    title = "Challenge: Terminate SlapNet - Laser Only", points = 25,
     description = "Get Laser before Area 12 and destroy SlapNet. From Area 12 up, don't ever change to a weapon other than Laser and don't be killed. Never use Shield. Zero points cheat not allowed.",
     id = 390963, badge = "441931", published = "20/01/2024 10:03:38", modified = "20/01/2024 10:03:38",
     trigger =   // Prevent hits outside 1P Game
@@ -1800,7 +1800,7 @@ achievement(
 )
 
 achievement(
-    title = "Challenge: Destroy SlapNet - H.Mis. Only", points = 50,
+    title = "Challenge: Terminate SlapNet - H.Mis. Only", points = 50,
     description = "Get H.Mis. before Area 12 and destroy SlapNet. From Area 12 up, don't ever change to a weapon other than H.Mis. and don't be killed. Never use Shield. Zero points cheat not allowed.",
     id = 390964, badge = "441932", published = "20/01/2024 10:03:39", modified = "20/01/2024 10:03:39",
     trigger =   // Prevent hits outside 1P Game
@@ -1842,7 +1842,7 @@ achievement(
 )
 
 achievement(
-    title = "Challenge: Destroy SlapNet - Bomb Only Lite", points = 10,
+    title = "Challenge: Terminate SlapNet - Bomb Only Lite", points = 10,
     description = "Get Bomb between Areas 46 and 55, both included, and destroy SlapNet. From the moment you get Bomb on, don't change weapon, don't use Shield, and don't be killed. Don't change to a weapon other than Bomb from Area 46 on. Zero points cheat not allowed.",
     id = 390939, badge = "441881", published = "20/01/2024 10:02:23", modified = "20/01/2024 10:02:23",
     trigger =   // Prevent hits outside 1P Game
@@ -1891,7 +1891,7 @@ achievement(
 )
 
 achievement(
-    title = "Challenge: Destroy SlapNet - Laser Only Lite", points = 10,
+    title = "Challenge: Terminate SlapNet - Laser Only Lite", points = 10,
     description = "Get Laser between Areas 46 and 55, both included, and destroy SlapNet. From the moment you get Laser on, don't change weapon, don't use Shield, and don't be killed. Don't change to a weapon other than Laser from Area 46 on. Zero points cheat not allowed.",
     id = 390957, badge = "441916", published = "20/01/2024 10:03:15", modified = "20/01/2024 10:03:15",
     trigger =   // Prevent hits outside 1P Game
@@ -1940,7 +1940,7 @@ achievement(
 )
 
 achievement(
-    title = "Challenge: Destroy SlapNet - H.Mis. Only Lite", points = 10,
+    title = "Challenge: Terminate SlapNet - H.Mis. Only Lite", points = 10,
     description = "Get H.Mis. between Areas 46 and 55, both included, and destroy SlapNet. From the moment you get H.Mis. on, don't change weapon, don't use Shield, and don't be killed. Don't change to a weapon other than H.Mis. from Area 46 on. Zero points cheat not allowe",
     id = 390940, badge = "441885", published = "20/01/2024 10:02:23", modified = "20/01/2024 10:02:23",
     trigger =   // Prevent hits outside 1P Game
@@ -2133,7 +2133,7 @@ achievement(
 // * Weapon-based Bonuses
 // *******************************************************************************************
 achievement(
-    title = "Challenge: Collect Hidden Shot Bonus", points = 10,
+    title = "Challenge: Shotty Hunter", points = 10,
     description = "Try and collect the 4 hidden bonus available with Shot weapon in any one loop. You must not be killed once the first shot bonus is collected.",
     id = 390958, badge = "457957", published = "20/01/2024 10:03:16", modified = "20/01/2024 10:03:16",
     trigger = // Prevent tally from counting hits outside 1P Game
@@ -2232,7 +2232,7 @@ achievement(
 )
 
 achievement(
-    title = "Challenge: Discover Hidden Bomb Targets", points = 25,
+    title = "Challenge: Boomba Secrets", points = 25,
     description = "Try and discover all hidden Bomb targets in any one loop. You must not be killed once approaching the first target.",
     id = 390941, badge = "441888", published = "20/01/2024 10:02:23", modified = "20/01/2024 10:02:23",
     trigger = // Prevent tally from counting hits outside 1P Game
@@ -2302,7 +2302,7 @@ achievement(
 )
 
 achievement(
-    title = "Challenge: Destroy All Destroyable Lattice Rails", points = 10,
+    title = "Challenge: Last Rail to Slapcentral", points = 10,
     description = "Try and destroy all those destroyable lattice rail segments in any one loop. You must not be killed between the first and last rails.",
     id = 390966, badge = "441934", published = "20/01/2024 10:03:39", modified = "20/01/2024 10:03:39",
     trigger = // Prevent tally from counting hits outside 1P Game
@@ -2354,7 +2354,7 @@ achievement(
 )
 
 achievement(
-    title = "Challenge: Grow All Laser Plants", points = 50,
+    title = "Challenge: Green Plastic Lasering Can", points = 50,
     description = "Try and fully grow all laser feeding plants in any one loop. You must not be killed between the first and last plants.",
     id = 390967, badge = "441935", published = "20/01/2024 10:03:39", modified = "20/01/2024 10:03:39",
     trigger = // Prevent tally from counting hits outside 1P Game
@@ -2406,7 +2406,7 @@ achievement(
 )
 
 achievement(
-    title = "Challenge: Destroy All the Deflectors", points = 50,
+    title = "Challenge: Flippy Flippy Bang Bang", points = 50,
     description = "Try and destroy the 56 hidden home missile deflectors in any one loop. You must not be killed, unless you do with zero points.",
     id = 390959, badge = "441922", published = "20/01/2024 10:03:16", modified = "20/01/2024 10:03:16",
     trigger = // Prevent tally from counting hits outside 1P Game
@@ -2740,7 +2740,7 @@ leaderboard(
 )
 
 leaderboard(
-    id = 87416, title = "SlapNet's Facilities Entrance Speedrun",
+    id = 87416, title = "Into SlapNet's Nest Speedrun",
     description = "Fastest time to get past SlapNet as it defends the entrance to the Head Motherboard Facilities. Shield not allowed.",
     start  = GameSettingsCheck() &&
              GameMode() == GameMode_1PGame &&
@@ -2758,7 +2758,7 @@ leaderboard(
 )
 
 leaderboard(
-    id = 87418, title = "Destroy SlapNet Speedrun",
+    id = 87418, title = "Terminate SlapNet Speedrun",
     description = "Fastest time to destroy SlapNet plugged to the Main Socket. Shield not allowed.",
     start  = GameSettingsCheck() &&
              GameMode() == GameMode_1PGame &&
