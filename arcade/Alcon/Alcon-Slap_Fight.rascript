@@ -1940,7 +1940,7 @@ achievement(
 )
 
 achievement(
-    title = "Challenge: Terminate SlapNet - H.Mis. Only Lite", points = 10,
+    title = "Challenge: Terminate SlapNet - H.Mis. Only Lite", points = 25,
     description = "Get H.Mis. between Areas 46 and 55, both included, and destroy SlapNet. From the moment you get H.Mis. on, don't change weapon, don't use Shield, and don't be killed. Don't change to a weapon other than H.Mis. from Area 46 on. Zero points cheat not allowe",
     id = 390940, badge = "441885", published = "20/01/2024 10:02:23", modified = "20/01/2024 10:02:23",
     trigger =   // Prevent hits outside 1P Game
@@ -2779,7 +2779,7 @@ leaderboard(
     start  =    GameSettingsCheck() &&
                 prev(GameMode()) == GameMode_1PGame && GameMode() == GameMode_1PGameOver,
     cancel =    // Cancel game session if ZP cheat
-                once((DeadWithZeroPoints())) &&
+                once(DeadWithZeroPoints()) &&
                 // Alt group: Eventualy reset ZP cheat hit at 1P game start
                 ResetHitsOnGameStart(),
     submit =    always_true(),
