@@ -183,6 +183,7 @@ Deflector_ExplosionCounter_PenUltFrame = 0x0F
 // Other Functions
 function ResetHitsOnGameStart_uniqueAlt() => (always_false() || never(prev(byte(0x000181)) != 0x10 && GameMode() == GameMode_1PGame))
 function ResetHitsOnGameStart_Alt() => (always_false() && never(prev(byte(0x000181)) != 0x10 && byte(0x000181) == 0x10))
+function ResetHitsOnGameStart() => never(prev(byte(0x000181)) != 0x10 && GameMode() == GameMode_1PGame)
 
 // *******************************************************************************************
 // * History Intro
@@ -1153,7 +1154,7 @@ achievement(
 )
 
 achievement(
-    title = "Challenge: Get Through SlapNet Entrance - Shot Only", points = 25,
+    title = "Challenge: Get Through SlapNet Entrance - Shot Only", points = 10,
     description = "Make SlapNet back off without ever changing from Shot to any other weapon, or using Shield, or being killed. Zero points cheat not allowed.",
     id = 390949, badge = "441906", published = "20/01/2024 10:03:14", modified = "20/01/2024 10:03:14",
     trigger =   // Prevent hits outside 1P Game
@@ -1214,7 +1215,7 @@ achievement(
 )
 
 achievement(
-    title = "Challenge: Get Through SlapNet Entrance - Bomb Only", points = 25,
+    title = "Challenge: Get Through SlapNet Entrance - Bomb Only", points = 10,
     description = "Get Bomb before Area 12 and make SlapNet back off. From Area 12 up, don't ever change to a weapon other than Bomb and don't be killed. Never use Shield. Zero points cheat not allowed.",
     id = 390936, badge = "441870", published = "20/01/2024 10:02:22", modified = "20/01/2024 10:02:22",
     trigger =   // Prevent hits outside 1P Game
@@ -1274,7 +1275,7 @@ achievement(
 )
 
 achievement(
-    title = "Challenge: Get Through SlapNet Entrance - Laser Only", points = 25,
+    title = "Challenge: Get Through SlapNet Entrance - Laser Only", points = 10,
     description = "Get Laser before Area 12 and make SlapNet back off. From Area 12 up, don't ever change to a weapon other than Laser and don't be killed. Never use Shield. Zero points cheat not allowed.",
     id = 390950, badge = "441907", published = "20/01/2024 10:03:14", modified = "20/01/2024 10:03:14",
     trigger =   // Prevent hits outside 1P Game
@@ -1334,7 +1335,7 @@ achievement(
 )
 
 achievement(
-    title = "Challenge: Get Through SlapNet Entrance - H.Mis. Only", points = 25,
+    title = "Challenge: Get Through SlapNet Entrance - H.Mis. Only", points = 10,
     description = "Get H.Mis. before Area 12 and make SlapNet back off. From Area 12 up, don't ever change to a weapon other than H.Mis. and don't be killed. Never use Shield. Zero points cheat not allowed.",
     id = 390951, badge = "441908", published = "20/01/2024 10:03:14", modified = "20/01/2024 10:03:14",
     trigger =   // Prevent hits outside 1P Game
@@ -1637,7 +1638,7 @@ achievement(
 )
 
 achievement(
-    title = "Destroy SlapNet Judgement Day", points = 50,
+    title = "Destroy SlapNet Judgement Day", points = 25,
     description = "Destroy SlapNet in its first 'reinrackation' (second loop). Zero points cheat not allowed.",
     id = 390955, badge = "441912", published = "20/01/2024 10:03:15", modified = "20/01/2024 10:03:15",
     trigger =   // Prevent hits outside 1P Game
@@ -1675,7 +1676,7 @@ achievement(
 )
 
 achievement(
-    title = "Challenge: Destroy SlapNet - Shot Only", points = 50,
+    title = "Challenge: Destroy SlapNet - Shot Only", points = 25,
     description = "Destroy SlapNet without ever changing from Shot to any other weapon, or using Shield, or being killed. Zero points cheat not allowed.",
     id = 390956, badge = "441913", published = "20/01/2024 10:03:15", modified = "20/01/2024 10:03:15",
     trigger =   // Prevent hits outside 1P Game
@@ -1715,7 +1716,7 @@ achievement(
 )
 
 achievement(
-    title = "Challenge: Destroy SlapNet - Bomb Only", points = 50,
+    title = "Challenge: Destroy SlapNet - Bomb Only", points = 25,
     description = "Get Bomb before Area 12 and destroy SlapNet. From Area 12 up, don't ever change to a weapon other than Bomb and don't be killed. Never use Shield. Zero points cheat not allowed.",
     id = 390962, badge = "441930", published = "20/01/2024 10:03:38", modified = "20/01/2024 10:03:38",
     trigger =   // Prevent hits outside 1P Game
@@ -1757,7 +1758,7 @@ achievement(
 )
 
 achievement(
-    title = "Challenge: Destroy SlapNet - Laser Only", points = 50,
+    title = "Challenge: Destroy SlapNet - Laser Only", points = 25,
     description = "Get Laser before Area 12 and destroy SlapNet. From Area 12 up, don't ever change to a weapon other than Laser and don't be killed. Never use Shield. Zero points cheat not allowed.",
     id = 390963, badge = "441931", published = "20/01/2024 10:03:38", modified = "20/01/2024 10:03:38",
     trigger =   // Prevent hits outside 1P Game
@@ -1799,7 +1800,7 @@ achievement(
 )
 
 achievement(
-    title = "Challenge: Destroy SlapNet - H.Mis. Only", points = 100,
+    title = "Challenge: Destroy SlapNet - H.Mis. Only", points = 50,
     description = "Get H.Mis. before Area 12 and destroy SlapNet. From Area 12 up, don't ever change to a weapon other than H.Mis. and don't be killed. Never use Shield. Zero points cheat not allowed.",
     id = 390964, badge = "441932", published = "20/01/2024 10:03:39", modified = "20/01/2024 10:03:39",
     trigger =   // Prevent hits outside 1P Game
@@ -1841,7 +1842,7 @@ achievement(
 )
 
 achievement(
-    title = "Challenge: Destroy SlapNet - Bomb Only Lite", points = 25,
+    title = "Challenge: Destroy SlapNet - Bomb Only Lite", points = 10,
     description = "Get Bomb between Areas 46 and 55, both included, and destroy SlapNet. From the moment you get Bomb on, don't change weapon, don't use Shield, and don't be killed. Don't change to a weapon other than Bomb from Area 46 on. Zero points cheat not allowed.",
     id = 390939, badge = "441881", published = "20/01/2024 10:02:23", modified = "20/01/2024 10:02:23",
     trigger =   // Prevent hits outside 1P Game
@@ -1890,7 +1891,7 @@ achievement(
 )
 
 achievement(
-    title = "Challenge: Destroy SlapNet - Laser Only Lite", points = 25,
+    title = "Challenge: Destroy SlapNet - Laser Only Lite", points = 10,
     description = "Get Laser between Areas 46 and 55, both included, and destroy SlapNet. From the moment you get Laser on, don't change weapon, don't use Shield, and don't be killed. Don't change to a weapon other than Laser from Area 46 on. Zero points cheat not allowed.",
     id = 390957, badge = "441916", published = "20/01/2024 10:03:15", modified = "20/01/2024 10:03:15",
     trigger =   // Prevent hits outside 1P Game
@@ -1939,7 +1940,7 @@ achievement(
 )
 
 achievement(
-    title = "Challenge: Destroy SlapNet - H.Mis. Only Lite", points = 50,
+    title = "Challenge: Destroy SlapNet - H.Mis. Only Lite", points = 10,
     description = "Get H.Mis. between Areas 46 and 55, both included, and destroy SlapNet. From the moment you get H.Mis. on, don't change weapon, don't use Shield, and don't be killed. Don't change to a weapon other than H.Mis. from Area 46 on. Zero points cheat not allowe",
     id = 390940, badge = "441885", published = "20/01/2024 10:02:23", modified = "20/01/2024 10:02:23",
     trigger =   // Prevent hits outside 1P Game
@@ -1992,7 +1993,7 @@ achievement(
 // * "Reachy" Achievements
 // *******************************************************************************************
 achievement(
-    title = "Whole Slappa Points", points = 50,
+    title = "Whole Slappa Points", points = 25,
     description = "Score 400000 points in the first loop. Zero points cheat not allowed.",
     id = 390918, badge = "441847", published = "20/01/2024 10:02:17", modified = "20/01/2024 10:02:17",
     trigger = // Prevent hits outside 1P Game
@@ -2019,7 +2020,7 @@ achievement(
 )
 
 achievement(
-    title = "Area 255", points = 100,
+    title = "Area 255", points = 50,
     description = "Complete the first three loops, crossing the loop border after destroying SlapNet in the third loop. Zero points cheat not allowed.",
     id = 390944, badge = "441901", published = "20/01/2024 10:02:24", modified = "20/01/2024 10:02:24",
     trigger = // Prevent hits outside 1P Game
@@ -2458,7 +2459,7 @@ achievement(
 //  2nd hit:     3c - 86 - 00 - up  -> Codigo 0x3c: 3000 points
 //  Touch:       3d - 80 - 00 - up  -> Codigo 0x3d: 1up
 achievement(
-    title = "Challenge: Beam Me Up, Shotty", points = 25,
+    title = "Challenge: Beam Me Up, Shotty", points = 10,
     description = "Try and get 70000 points from any one hidden shot bonus.",
     trigger = // Game Settings Checks 
               GameSettingsCheck() &&
@@ -2583,7 +2584,7 @@ leaderboard(
     cancel =    // Cancel game session if ZP cheat
                 once(DeadWithZeroPoints()) &&
                 // Alt group: Eventualy reset ZP cheat hit at 1P game start
-                ResetHitsOnGameStart_uniqueAlt(),
+                ResetHitsOnGameStart(),
     submit =    always_true(),
     value =     Score(),
     format =    "SCORE"
@@ -2622,7 +2623,7 @@ leaderboard(
                 // which will be the second decrease of the variable
                 repeated(2, prev(LivesRemaining()) > LivesRemaining()) &&
                 // Alt group: Reset previous hits at game start
-                ResetHitsOnGameStart_uniqueAlt(),
+                ResetHitsOnGameStart(),
     submit =    always_true(),
     value =     Score(),
     format =    "SCORE"
@@ -2780,7 +2781,7 @@ leaderboard(
     cancel =    // Cancel game session if ZP cheat
                 once((DeadWithZeroPoints())) &&
                 // Alt group: Eventualy reset ZP cheat hit at 1P game start
-                ResetHitsOnGameStart_uniqueAlt(),
+                ResetHitsOnGameStart(),
     submit =    always_true(),
     value  =    EnhancedArea(),
     format =    "VALUE"
@@ -2797,7 +2798,7 @@ leaderboard(
                 // which will be the second decrease of the variable
                 repeated(2, prev(LivesRemaining()) > LivesRemaining()) &&
                 // Alt group: reset previous hits at 1P game start
-                ResetHitsOnGameStart_uniqueAlt(),
+                ResetHitsOnGameStart(),
     submit =    always_true(),
     value =     EnhancedArea(),
     format =    "VALUE"
@@ -2816,7 +2817,7 @@ leaderboard(
                 // which will be the second decrease of the variable
                 repeated(2, prev(LivesRemaining()) > LivesRemaining()) &&
                 // Alt group: reset previous hits at 1P game start
-                ResetHitsOnGameStart_uniqueAlt(),
+                ResetHitsOnGameStart(),
     submit =    always_true(),
     value =     EnhancedArea(),
     format =    "VALUE"
