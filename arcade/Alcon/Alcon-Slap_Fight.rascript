@@ -2133,7 +2133,7 @@ achievement(
 // * Weapon-based Bonuses
 // *******************************************************************************************
 achievement(
-    title = "Challenge: Collect Hidden Shot Bonus", points = 25,
+    title = "Challenge: Collect Hidden Shot Bonus", points = 10,
     description = "Try and collect the 4 hidden bonus available with Shot weapon in any one loop. You must not be killed once the first shot bonus is collected.",
     id = 390958, badge = "457957", published = "20/01/2024 10:03:16", modified = "20/01/2024 10:03:16",
     trigger = // Prevent tally from counting hits outside 1P Game
