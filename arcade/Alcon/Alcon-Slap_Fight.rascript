@@ -38,6 +38,7 @@ function ScoreUpdate() => word(0x000192)
 
 // 0x0001A8: Several Uses
 function GameInAction() => high4(0x0001A8) == 0 && bit3(0x0001A8) == 1
+function C0B0_Protection() => byte(0x0001A8) != 0
 
 // 0x0001AF: Companion Ship Sprite Data
 function CompanionShipSkin() => byte(0x0001AF)
@@ -225,9 +226,12 @@ achievement(
                   DeadWithZeroPoints()
               ) &&
 
+              // C0B0_Protection(), 0x0001a8: Changes in weapon changing and wing adding animations.
+              // It seems that a lot of people use this short inmunity
+              //   Sequence: 0x08 -> 0x88 -> 0x28 a few seconds when you ar inmune -> 0x08
               // Start event (checkpoint): Boss 1 appears
               once(
-                  GameInAction() &&
+                  C0B0_Protection() &&
                   MapSection() == 8 &&
                   MapSectionOffset() == 0x1F8
               ) &&
@@ -268,7 +272,7 @@ achievement(
 
               // Start event (checkpoint): Boss 1 appears in the second loop
               once(
-                  GameInAction() &&
+                  C0B0_Protection() &&
                   IsSecondLoop() &&
                   MapSection() == 8 &&
                   MapSectionOffset() == 0x1F8
@@ -320,7 +324,7 @@ achievement(
               
               // Start event (checkpoint): Boss 1 appears
               once(
-                  GameInAction() &&
+                  C0B0_Protection() &&
                   MapSection() == 8 &&
                   MapSectionOffset() == 0x1F8
               ) && 
@@ -367,7 +371,7 @@ achievement(
                
               // Start event (checkpoint): Boss 1 appears
               once(
-                  GameInAction() &&
+                  C0B0_Protection() &&
                   MapSection() == 8 &&
                   MapSectionOffset() == 0x1F8
               ) && 
@@ -414,7 +418,7 @@ achievement(
 
               // Start event (checkpoint): Boss 1 appears
               once(
-                  GameInAction() &&
+                  C0B0_Protection() &&
                   MapSection() == 8 &&
                   MapSectionOffset() == 0x1F8
               ) && 
@@ -461,7 +465,7 @@ achievement(
 
               // Start event (checkpoint): Boss 1 appears
               once(
-                  GameInAction() &&
+                  C0B0_Protection() &&
                   MapSection() == 8 &&
                   MapSectionOffset() == 0x1F8
               ) && 
@@ -499,7 +503,7 @@ achievement(
 
               // Start event (checkpoint): Boss 1 appears
               once(
-                  GameInAction() &&
+                  C0B0_Protection() &&
                   MapSection() == 8 &&
                   (MapSectionOffset() == 0x1F8)
               ) &&
@@ -543,7 +547,7 @@ achievement(
 
               // Start event (checkpoint): Boss 1 appears and ship's got 3 wings
               once(
-                  GameInAction() &&
+                  C0B0_Protection() &&
                   MapSection() == 8 &&
                   (MapSectionOffset() == 0x1F8)
               ) &&
@@ -592,7 +596,7 @@ achievement(
 
               // Start event (checkpoint): Boss 1 appears
               once(
-                  GameInAction() &&
+                  C0B0_Protection() &&
                   MapSection() == 8 &&
                   MapSectionOffset() == 0x1F8
               ) && 
@@ -631,7 +635,7 @@ achievement(
 
               // Start event (checkpoint): Boss 2 appears
               once(
-                  GameInAction() &&
+                  C0B0_Protection() &&
                   MapSection() == 0x14 &&
                   MapSectionOffset() == 0x128
               ) &&
@@ -672,7 +676,7 @@ achievement(
 
               // Start event (checkpoint): Boss 2 appears in the second loop
               once(
-                  GameInAction() &&
+                  C0B0_Protection() &&
                   IsSecondLoop() &&
                   MapSection() == 0x14 &&
                   MapSectionOffset() == 0x128
@@ -724,7 +728,7 @@ achievement(
 
               // Start event (checkpoint): Boss 2 appears
               once(
-                  GameInAction() &&
+                  C0B0_Protection() &&
                   MapSection() == 0x14 &&
                   MapSectionOffset() == 0x128
               ) &&
@@ -771,7 +775,7 @@ achievement(
 
               // Start event (checkpoint): Boss 2 appears
               once(
-                  GameInAction() &&
+                  C0B0_Protection() &&
                   MapSection() == 0x14 &&
                   MapSectionOffset() == 0x128
               ) &&
@@ -818,7 +822,7 @@ achievement(
 
               // Start event (checkpoint): Boss 2 appears
               once(
-                  GameInAction() &&
+                  C0B0_Protection() &&
                   MapSection() == 0x14 &&
                   MapSectionOffset() == 0x128
               ) &&
@@ -865,7 +869,7 @@ achievement(
 
               // Start event (checkpoint): Boss 2 appears
               once(
-                  GameInAction() &&
+                  C0B0_Protection() &&
                   MapSection() == 0x14 &&
                   MapSectionOffset() == 0x128
               ) &&
@@ -903,7 +907,7 @@ achievement(
 
               // Start event (checkpoint): Boss 2 appears
               once(
-                  GameInAction() &&
+                  C0B0_Protection() &&
                   MapSection() == 0x14 &&
                   MapSectionOffset() == 0x128
               ) &&
@@ -947,7 +951,7 @@ achievement(
 
               // Start event (checkpoint): Boss 2 appears
               once(
-                  GameInAction() &&
+                  C0B0_Protection() &&
                   MapSection() == 0x14 &&
                   MapSectionOffset() == 0x128
               ) &&
@@ -987,7 +991,7 @@ achievement(
 
               // Start event (checkpoint): Boss 2 appears
               once(
-                  GameInAction() &&
+                  C0B0_Protection() &&
                   MapSection() == 0x14 &&
                   MapSectionOffset() == 0x128
               ) &&
@@ -1028,7 +1032,7 @@ achievement(
 
               // Start event (checkpoint): reaching the wave
               once(
-                  GameInAction() &&
+                  C0B0_Protection() &&
                   MapSection() == 0x19 &&
                   MapSectionOffset() == 0x128
               ) &&
@@ -1094,7 +1098,7 @@ achievement(
 
                 // Start event (checkpoint): We reach Boss 3 location
                 once(
-                    GameInAction() &&
+                    C0B0_Protection() &&
                     MapSection() == 0x22 &&
                     MapSectionOffset() == 0x068
                 ) &&
@@ -1129,7 +1133,7 @@ achievement(
 
                 // Start event (checkpoint): We reach Boss 3 location in the second loop
                 once(
-                    GameInAction() &&
+                    C0B0_Protection() &&
                     IsSecondLoop() &&
                     MapSection() == 0x22 &&
                     MapSectionOffset() == 0x068
@@ -1176,7 +1180,7 @@ achievement(
 
                 // Start event (checkpoint): We reach Boss 3 location
                 once(
-                    GameInAction() &&
+                    C0B0_Protection() &&
                     MapSection() == 0x22 &&
                     MapSectionOffset() == 0x068
                 ) &&
@@ -1239,7 +1243,7 @@ achievement(
 
                 // Start event (checkpoint): We reach Boss 3 location
                 once(
-                    GameInAction() &&
+                    C0B0_Protection() &&
                     MapSection() == 0x22 &&
                     MapSectionOffset() == 0x068
                 ) &&
@@ -1299,7 +1303,7 @@ achievement(
 
                 // Start event (checkpoint): We reach Boss 3 location
                 once(
-                    GameInAction() &&
+                    C0B0_Protection() &&
                     MapSection() == 0x22 &&
                     MapSectionOffset() == 0x068
                 ) &&
@@ -1359,7 +1363,7 @@ achievement(
 
                 // Start event (checkpoint): We reach Boss 3 location
                 once(
-                    GameInAction() &&
+                    C0B0_Protection() &&
                     MapSection() == 0x22 &&
                     MapSectionOffset() == 0x068
                 ) &&
@@ -1410,7 +1414,7 @@ achievement(
 
                 // Start event (checkpoint): We reach Boss 3 location
                 once(
-                    GameInAction() &&
+                    C0B0_Protection() &&
                     MapSection() == 0x22 &&
                     MapSectionOffset() == 0x068
                 ) &&
@@ -1448,7 +1452,7 @@ achievement(
 
                 // Start event (checkpoint): We reach Boss 3 location
                 once(
-                    GameInAction() &&
+                    C0B0_Protection() &&
                     MapSection() == 0x22 &&
                     MapSectionOffset() == 0x068
                 ) &&
@@ -1483,7 +1487,7 @@ achievement(
 
                 // Start event (checkpoint): We reach Boss 3 location
                 once(
-                    GameInAction() &&
+                    C0B0_Protection() &&
                     MapSection() == 0x22 &&
                     MapSectionOffset() == 0x068
                 ) &&
@@ -1541,9 +1545,9 @@ achievement(
                 ) &&
 
                 // Start event (checkpoint): We reach first member of the pair
-                // We apply offset protection with GameInAction()
+                // We apply offset protection with C0B0_Protection()
                 once(
-                    GameInAction() &&
+                    C0B0_Protection() &&
                     MapSection() == 0x23 &&
                     MapSectionOffset() == 0x188
                 ) &&
@@ -1561,8 +1565,9 @@ achievement(
                 //  a game to time the horizontal courtain removal effect from 0 to 0x200
                 //  and the checkpoint 0x22:0x068 will be hit. This is the checkpoint of
                 //  achievements and leaderboards related to SlapNet's Entrance.
-                //  byte(0x0001A8), GameInAction(), follows this sequence:
+                //  byte(0x0001A8), C0B0_Protection(), follows this sequence:
                 //    0x08 -> Ship destroyed, explosion begins -> 0x88 -> Courtain on -> 0x00 -> Timing to 0x200 -> 0x40 -> Courtain off -> 0x08
+                //  byte(0x0001A8) isn't suitable for this purpose: It changes is similar way when adding wings to the ship.
                 never(
                    prev(ShipDestructionCounter()) == ShipDestruction_PenUltFrame &&
                    ShipDestructionCounter() == ShipDestruction_LastFrame
@@ -1614,7 +1619,7 @@ achievement(
 
                 // Start event (checkpoint): We reach Final Boss location
                 once(
-                    GameInAction() &&
+                    C0B0_Protection() &&
                     MapSection() == 0x28 &&
                     MapSectionOffset() == 0x080
                 ) &&
@@ -1651,7 +1656,7 @@ achievement(
                 // Start event (checkpoint): We reach Final Boss location in the second loop
                 once(
                     IsSecondLoop() &&
-                    GameInAction() &&
+                    C0B0_Protection() &&
                     MapSection() == 0x28 &&
                     MapSectionOffset() == 0x080
                 ) &&
@@ -1667,7 +1672,7 @@ achievement(
 
                 // Trigger: When we reach SlapNet, game scroll pauses at section offset 0x0df
                 // Once destroyed, game scroll resumes increasing the offset
-                GameInAction() &&
+                C0B0_Protection() &&
                 MapSection() == 0x28 && 
                 MapSectionOffset() == 0x0E0 && 
               
@@ -1698,7 +1703,7 @@ achievement(
 
                 // Start event (checkpoint): We reach Final Boss location
                 once(
-                    GameInAction() &&
+                    C0B0_Protection() &&
                     MapSection() == 0x28 &&
                     MapSectionOffset() == 0x080
                 ) &&
@@ -1740,7 +1745,7 @@ achievement(
 
                 // Start event (checkpoint): We reach Final Boss location
                 once(
-                    GameInAction() &&
+                    C0B0_Protection() &&
                     MapSection() == 0x28 &&
                     MapSectionOffset() == 0x080
                 ) &&
@@ -1782,7 +1787,7 @@ achievement(
 
                 // Start event (checkpoint): We reach Final Boss location
                 once(
-                    GameInAction() &&
+                    C0B0_Protection() &&
                     MapSection() == 0x28 &&
                     MapSectionOffset() == 0x080
                 ) &&
@@ -1824,7 +1829,7 @@ achievement(
 
                 // Start event (checkpoint): We reach Final Boss location
                 once(
-                    GameInAction() &&
+                    C0B0_Protection() &&
                     MapSection() == 0x28 &&
                     MapSectionOffset() == 0x080
                 ) &&
@@ -1873,7 +1878,7 @@ achievement(
 
                 // Start event (checkpoint): We reach Final Boss location
                 once(
-                    GameInAction() &&
+                    C0B0_Protection() &&
                     MapSection() == 0x28 &&
                     MapSectionOffset() == 0x080
                 ) &&
@@ -1922,7 +1927,7 @@ achievement(
 
                 // Start event (checkpoint): We reach Final Boss location
                 once(
-                    GameInAction() &&
+                    C0B0_Protection() &&
                     MapSection() == 0x28 &&
                     MapSectionOffset() == 0x080
                 ) &&
@@ -1971,7 +1976,7 @@ achievement(
 
                 // Start event (checkpoint): We reach Final Boss location
                 once(
-                    GameInAction() &&
+                    C0B0_Protection() &&
                     MapSection() == 0x28 &&
                     MapSectionOffset() == 0x080
                 ) &&
@@ -2033,7 +2038,7 @@ achievement(
               // Start event (checkpoint): We show the icon when facing SlapNet in Loop 3
               once(
                   IsThirdLoop() &&
-                  GameInAction() &&
+                  C0B0_Protection() &&
                   MapSection() == 0x28 &&
                   MapSectionOffset() == 0x80
               ) &&
@@ -2141,7 +2146,7 @@ achievement(
 
               // Start event (checkpoint): reaching the first Shot Bonus
               once(
-                  GameInAction() &&
+                  C0B0_Protection() &&
                   MapSection() == 0x0D &&
                   MapSectionOffset() == 0x1C0
               ) && 
@@ -2240,7 +2245,7 @@ achievement(
 
               // Start event (checkpoint): reaching the first Shot Bonus
               once(
-                  GameInAction() &&
+                  C0B0_Protection() &&
                   MapSection() == 0x05 &&
                   MapSectionOffset() == 0x180
               ) && 
@@ -2310,7 +2315,7 @@ achievement(
 
               // Start event (checkpoint): reaching the first lattice rails
               once(
-                  GameInAction() &&
+                  C0B0_Protection() &&
                   MapSection() == 0x15 &&
                   MapSectionOffset() == 0x1E8
               ) && 
@@ -2362,7 +2367,7 @@ achievement(
 
               // Start event (checkpoint): reaching the first laser plant
               once(
-                  GameInAction() &&
+                  C0B0_Protection() &&
                   MapSection() == 0x0e &&
                   MapSectionOffset() == 0x090
               ) && 
@@ -2744,7 +2749,7 @@ leaderboard(
     description = "Fastest time to get past SlapNet as it defends the entrance to the Head Motherboard Facilities. Shield not allowed.",
     start  = GameSettingsCheck() &&
              GameMode() == GameMode_1PGame &&
-             GameInAction() &&
+             C0B0_Protection() &&
              MapSection() == 0x22 &&
              MapSectionOffset() == 0x068,             
     cancel = // If shield is active
@@ -2762,7 +2767,7 @@ leaderboard(
     description = "Fastest time to destroy SlapNet plugged to the Main Socket. Shield not allowed.",
     start  = GameSettingsCheck() &&
              GameMode() == GameMode_1PGame &&
-             GameInAction() &&
+             C0B0_Protection() &&
              MapSection() == 0x28 &&
              MapSectionOffset() == 0x80,
     cancel = (ShipShield() != ShipShield_Off) ||
